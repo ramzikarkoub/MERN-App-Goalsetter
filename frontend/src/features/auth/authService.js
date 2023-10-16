@@ -1,10 +1,13 @@
 import axios from "axios";
 
-const API_URL = "https://mern-app-goalsetter.vercel.app/";
+// const API_URL = "https://mern-app-goalsetter.vercel.app/";
 
 // Register user
 const register = async (userData) => {
-  const response = await axios.post(API_URL, userData);
+  const response = await axios.post(
+    "https://mern-app-goalsetter.vercel.app/",
+    userData
+  );
 
   if (response.data) {
     localStorage.setItem("user", JSON.stringify(response.data));
@@ -15,7 +18,10 @@ const register = async (userData) => {
 
 // Login user
 const login = async (userData) => {
-  const response = await axios.post(API_URL + "login", userData);
+  const response = await axios.post(
+    "https://mern-app-goalsetter.vercel.app/login",
+    userData
+  );
   console.log(response);
   if (response.data) {
     localStorage.setItem("user", JSON.stringify(response.data));
