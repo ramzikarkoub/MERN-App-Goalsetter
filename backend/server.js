@@ -9,7 +9,12 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 const app = express();
-app.use(cors({ origin: "https://sprightly-chaja-4f7128.netlify.app" }));
+const corsOptions = {
+  origin: "https://main--sprightly-chaja-4f7128.netlify.app/",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/goals", require("./routes/goalRoutes"));
