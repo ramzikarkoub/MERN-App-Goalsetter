@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 connectDB();
 const app = express();
 const corsOptions = {
-  origin: "https://main--sprightly-chaja-4f7128.netlify.app/",
+  origin: "https://sprightly-chaja-4f7128.netlify.app/",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
 
