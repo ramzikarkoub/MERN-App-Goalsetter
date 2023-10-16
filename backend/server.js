@@ -11,8 +11,8 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: "https://sprightly-chaja-4f7128.netlify.app",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    origin:
+      "https://652d7fc16932ec000806b3df--sprightly-chaja-4f7128.netlify.app/",
   })
 );
 app.use(express.json());
