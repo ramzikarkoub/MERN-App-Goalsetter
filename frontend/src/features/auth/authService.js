@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://your-netlify-app-url/api/users/";
+const API_URL = "https://sprightly-chaja-4f7128.netlify.app/";
 
 // Register user
 const register = async (userData) => {
