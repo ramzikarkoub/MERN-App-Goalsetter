@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://652cdf4edafbc14cb5c12413--mern-app-goalsetter.netlify.app",
+  "proxy": "https://mern-app-goalsetter-ptnsk48be-ramzikarkoub.vercel.app/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
