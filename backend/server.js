@@ -10,7 +10,13 @@ const port = process.env.PORT || 5000;
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://main--mern-app-goalsetter.netlify.app", // Replace with your Netlify frontend URL
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true, // Set this to true if your frontend sends cookies or authentication headers
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
