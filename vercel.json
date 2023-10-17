@@ -1,0 +1,10 @@
+{
+  "builCommande": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/backend/(.*)",
+      "destination": "/backend/server.js"
+    }
+  ]
+}
