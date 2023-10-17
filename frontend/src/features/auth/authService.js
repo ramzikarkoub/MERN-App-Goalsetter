@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "main--mern-app-goalsetter.netlify.app/api/users/";
+const API_URL = "https://main--mern-app-goalsetter.netlify.app/api/users/";
 
 // Register user
 const register = async (userData) => {
